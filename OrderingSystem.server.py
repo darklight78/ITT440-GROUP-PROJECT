@@ -9,7 +9,7 @@ import errno
 from multiprocessing import Process
 
 def process_start(s_sock):
-    s_sock.send(str.encode('\n===MUR MUR CAFE===\n'))
+    s_sock.send(str.encode('\n=== WELCOME MUR MUR CAFE===\n'))
     while True:
         data = s_sock.recv(2048)
         data = data.decode("utf-8")
